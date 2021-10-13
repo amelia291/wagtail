@@ -3,10 +3,10 @@ from django.contrib.auth.models import Group, Permission
 from django.test import TestCase
 from django.urls import reverse
 
-from wagtail.core.admin import widgets as wagtailadmin_widgets
+from wagtail.admin import widgets as wagtailadmin_widgets
 from wagtail.contrib.simple_translation.wagtail_hooks import (
     page_listing_more_buttons, register_submit_translation_permission)
-from wagtail.core.models import Locale, Page
+from wagtail.models import Locale, Page
 from wagtail.test.i18n.models import TestPage
 from wagtail.test.utils import WagtailTestUtils
 

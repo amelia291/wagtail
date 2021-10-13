@@ -3,13 +3,13 @@ from django.core.paginator import Paginator
 from django.template.response import TemplateResponse
 from django.utils.translation import gettext as _
 
-from wagtail.core.admin import messages
-from wagtail.core.admin.forms.search import SearchForm
-from wagtail.core.admin.rich_text import get_rich_text_editor_widget
-from wagtail.core.admin.widgets import (
+from wagtail.admin import messages
+from wagtail.admin.forms.search import SearchForm
+from wagtail.admin.rich_text import get_rich_text_editor_widget
+from wagtail.admin.widgets import (
     AdminAutoHeightTextInput, AdminDateInput, AdminDateTimeInput, AdminPageChooser, AdminTimeInput,
     SwitchInput)
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail.documents.widgets import AdminDocumentChooser
 from wagtail.images.widgets import AdminImageChooser
 from wagtail.snippets.widgets import AdminSnippetChooser

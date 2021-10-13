@@ -4,10 +4,10 @@ from django.forms.models import modelform_factory
 from django.utils.text import capfirst
 from django.utils.translation import gettext as _
 
-from wagtail.core.admin import widgets
-from wagtail.core.admin.forms.collections import (
+from wagtail.admin import widgets
+from wagtail.admin.forms.collections import (
     BaseCollectionMemberForm, CollectionChoiceField, collection_member_permission_formset_factory)
-from wagtail.core.models import Collection
+from wagtail.models import Collection
 from wagtail.images.fields import WagtailImageField
 from wagtail.images.formats import get_image_formats
 from wagtail.images.models import Image

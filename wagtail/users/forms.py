@@ -11,9 +11,9 @@ from django.template.loader import render_to_string
 from django.utils.html import mark_safe
 from django.utils.translation import gettext_lazy as _
 
-from wagtail.core.admin.widgets import AdminPageChooser
-from wagtail.core import hooks
-from wagtail.core.models import (
+from wagtail.admin.widgets import AdminPageChooser
+from wagtail import hooks
+from wagtail.models import (
     PAGE_PERMISSION_TYPE_CHOICES, PAGE_PERMISSION_TYPES, GroupPagePermission, Page)
 
 
@@ -237,7 +237,7 @@ class GroupForm(forms.ModelForm):
     def save(self):
         # We go back to the object to read (in order to reapply) the
         # permissions which were set on this group, but which are not
-        # accessible in the wagtail.core.admin interface, as otherwise these would
+        # accessible in the wagtail.admin interface, as otherwise these would
         # be clobbered by this form.
         try:
             untouchable_permissions = self.instance.permissions.exclude(pk__in=self.registered_permissions)

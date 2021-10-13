@@ -101,8 +101,8 @@ class UpdateModulePaths(Command):
     description = "Update a Wagtail project tree to use Wagtail 2.x module paths"
 
     REPLACEMENTS = [
-        (re.compile(r'\bwagtail\.wagtailcore\b'), 'wagtail.core'),
-        (re.compile(r'\bwagtail\.wagtailadmin\b'), 'wagtail.core.admin'),
+        (re.compile(r'\bwagtail\.wagtailcore\b'), 'wagtail'),
+        (re.compile(r'\bwagtail\.wagtailadmin\b'), 'wagtail.admin'),
         (re.compile(r'\bwagtail\.wagtaildocs\b'), 'wagtail.documents'),
         (re.compile(r'\bwagtail\.wagtailembeds\b'), 'wagtail.embeds'),
         (re.compile(r'\bwagtail\.wagtailimages\b'), 'wagtail.images'),

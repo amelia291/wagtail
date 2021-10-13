@@ -2,9 +2,9 @@ from django.contrib.admin.utils import quote
 from django.core import checks
 from django.urls import reverse
 
-from wagtail.core.admin.admin_url_finder import register_admin_url_finder
-from wagtail.core.admin.checks import check_panels_in_model
-from wagtail.core.admin.models import get_object_usage
+from wagtail.admin.admin_url_finder import register_admin_url_finder
+from wagtail.admin.checks import check_panels_in_model
+from wagtail.admin.models import get_object_usage
 
 
 SNIPPET_MODELS = []

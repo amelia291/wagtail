@@ -8,11 +8,11 @@ from django.template.response import TemplateResponse
 from django.utils.text import capfirst
 from django.utils.translation import gettext as _
 
-from wagtail.core.admin import messages
-from wagtail.core.edit_handlers import (
+from wagtail.admin import messages
+from wagtail.edit_handlers import (
     ObjectList, TabbedInterface, extract_panel_definitions_from_model_class)
-from wagtail.core.log_actions import log
-from wagtail.core.models import Site
+from wagtail.log_actions import log
+from wagtail.models import Site
 
 from .forms import SiteSwitchForm
 from .permissions import user_can_edit_setting_type

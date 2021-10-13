@@ -1,8 +1,8 @@
 from django.db import models
 
-from wagtail.core.edit_handlers import (
+from wagtail.edit_handlers import (
     FieldPanel, MultiFieldPanel, ObjectList, PageChooserPanel, TabbedInterface)
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail.search import index
 
 

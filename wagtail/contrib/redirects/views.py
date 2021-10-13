@@ -13,10 +13,10 @@ from django.utils.translation import ngettext
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.vary import vary_on_headers
 
-from wagtail.core.admin import messages
-from wagtail.core.admin.auth import PermissionPolicyChecker
-from wagtail.core.admin.forms.search import SearchForm
-from wagtail.core.admin.views.reports import ReportView
+from wagtail.admin import messages
+from wagtail.admin.auth import PermissionPolicyChecker
+from wagtail.admin.forms.search import SearchForm
+from wagtail.admin.views.reports import ReportView
 from wagtail.contrib.redirects import models
 from wagtail.contrib.redirects.base_formats import DEFAULT_FORMATS
 from wagtail.contrib.redirects.filters import RedirectsReportFilterSet
@@ -25,7 +25,7 @@ from wagtail.contrib.redirects.permissions import permission_policy
 from wagtail.contrib.redirects.utils import (
     get_file_storage, get_format_cls_by_extension, get_import_formats, get_supported_extensions,
     write_to_file_storage)
-from wagtail.core.log_actions import log
+from wagtail.log_actions import log
 
 
 permission_checker = PermissionPolicyChecker(permission_policy)

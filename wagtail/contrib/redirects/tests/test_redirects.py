@@ -2,9 +2,9 @@
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-from wagtail.core.admin.admin_url_finder import AdminURLFinder
+from wagtail.admin.admin_url_finder import AdminURLFinder
 from wagtail.contrib.redirects import models
-from wagtail.core.models import Page, Site
+from wagtail.models import Page, Site
 from wagtail.test.utils import WagtailTestUtils
 
 

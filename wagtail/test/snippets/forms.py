@@ -1,4 +1,4 @@
-from wagtail.core.admin.forms import WagtailAdminModelForm
+from wagtail.admin.forms import WagtailAdminModelForm
 
 
 class FancySnippetForm(WagtailAdminModelForm):

@@ -2,9 +2,9 @@ import django_filters
 
 from django.utils.translation import gettext as _
 
-from wagtail.core.admin.filters import WagtailFilterSet
-from wagtail.core.admin.widgets import ButtonSelect
-from wagtail.core.models import Site
+from wagtail.admin.filters import WagtailFilterSet
+from wagtail.admin.widgets import ButtonSelect
+from wagtail.models import Site
 
 
 class RedirectsReportFilterSet(WagtailFilterSet):

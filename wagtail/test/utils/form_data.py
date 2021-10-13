@@ -6,7 +6,7 @@ the ``wagtail.test.utils.form_data`` module provides a set of helper
 functions to assist with this.
 """
 
-from wagtail.core.admin.rich_text import get_rich_text_editor_widget
+from wagtail.admin.rich_text import get_rich_text_editor_widget
 
 
 def _nested_form_data(data):

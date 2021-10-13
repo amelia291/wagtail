@@ -1,11 +1,11 @@
 import os.path
 
-from wagtail.core.admin.views.generic.multiple_upload import AddView as BaseAddView
-from wagtail.core.admin.views.generic.multiple_upload import \
+from wagtail.admin.views.generic.multiple_upload import AddView as BaseAddView
+from wagtail.admin.views.generic.multiple_upload import \
     CreateFromUploadView as BaseCreateFromUploadView
-from wagtail.core.admin.views.generic.multiple_upload import DeleteUploadView as BaseDeleteUploadView
-from wagtail.core.admin.views.generic.multiple_upload import DeleteView as BaseDeleteView
-from wagtail.core.admin.views.generic.multiple_upload import EditView as BaseEditView
+from wagtail.admin.views.generic.multiple_upload import DeleteUploadView as BaseDeleteUploadView
+from wagtail.admin.views.generic.multiple_upload import DeleteView as BaseDeleteView
+from wagtail.admin.views.generic.multiple_upload import EditView as BaseEditView
 from wagtail.search.backends import get_search_backends
 
 from .. import get_document_model

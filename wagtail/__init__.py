@@ -17,7 +17,7 @@ __semver__ = get_semver_version(VERSION)
 from wagtail import __semver__, __version__  # noqa
 
 
-default_app_config = 'wagtail.core.apps.WagtailCoreAppConfig'
+default_app_config = 'wagtail.apps.WagtailCoreAppConfig'
 
 
 def setup():

@@ -45,7 +45,7 @@ class AdminURLHelper:
         return self.get_action_url('create')
 
 
-# for registering with wagtail.core.admin.admin_url_finder.
+# for registering with wagtail.admin.admin_url_finder.
 # Subclasses should define url_helper and permission_helper
 class ModelAdminURLFinder:
     def __init__(self, user):

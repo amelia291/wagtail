@@ -1,8 +1,8 @@
 from django.template.loader import render_to_string
 from django.utils.functional import cached_property
 
-from wagtail.core.admin.compare import BlockComparison
-from wagtail.core.blocks import ChooserBlock
+from wagtail.admin.compare import BlockComparison
+from wagtail.blocks import ChooserBlock
 
 from .shortcuts import get_rendition_or_not_found
 
