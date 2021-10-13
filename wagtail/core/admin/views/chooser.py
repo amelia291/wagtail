@@ -13,7 +13,7 @@ from wagtail.core.admin.forms.search import SearchForm
 from wagtail.core.admin.modal_workflow import render_modal_workflow
 from wagtail.core import hooks
 from wagtail.core.models import Page, Site, UserPagePermissionsProxy
-from wagtail.core.utils import resolve_model_string
+from wagtail.core.coreutils import resolve_model_string
 
 
 def shared_context(request, extra_context=None):

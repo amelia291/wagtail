@@ -39,7 +39,7 @@ from wagtail.core.models import (
 from wagtail.core.permissions import (
     collection_permission_policy, task_permission_policy, workflow_permission_policy)
 from wagtail.core.rich_text.pages import PageLinkHandler
-from wagtail.core.utils import get_content_languages
+from wagtail.core.coreutils import get_content_languages
 from wagtail.core.whitelist import allow_without_attributes, attribute_rule, check_url
 
 

@@ -23,7 +23,7 @@ from wagtail.core.admin.forms.comments import CommentForm, CommentReplyForm
 from wagtail.core.admin.templatetags.wagtailadmin_tags import avatar_url, user_display_name
 from wagtail.core.fields import RichTextField
 from wagtail.core.models import Page
-from wagtail.core.utils import camelcase_to_underscore, resolve_model_string
+from wagtail.core.coreutils import camelcase_to_underscore, resolve_model_string
 from wagtail.utils.decorators import cached_classmethod
 
 # DIRECT_FORM_FIELD_OVERRIDES, FORM_FIELD_OVERRIDES are imported for backwards

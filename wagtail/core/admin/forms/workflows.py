@@ -9,7 +9,7 @@ from wagtail.core.edit_handlers import FieldPanel, InlinePanel, ObjectList
 from wagtail.core.admin.forms import WagtailAdminModelForm
 from wagtail.core.admin.widgets.workflows import AdminTaskChooser
 from wagtail.core.models import Page, Task, Workflow, WorkflowPage
-from wagtail.core.utils import get_model_string
+from wagtail.core.coreutils import get_model_string
 
 
 class TaskChooserSearchForm(forms.Form):
