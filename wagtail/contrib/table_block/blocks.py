@@ -6,7 +6,7 @@ from django.utils import translation
 from django.utils.functional import cached_property
 from django.utils.translation import gettext as _
 
-from wagtail.admin.staticfiles import versioned_static
+from wagtail.core.admin.staticfiles import versioned_static
 from wagtail.core.blocks import FieldBlock
 from wagtail.core.telepath import register
 from wagtail.core.widget_adapters import WidgetAdapter

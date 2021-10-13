@@ -7,9 +7,9 @@ from django.urls import reverse
 from django.utils.functional import cached_property
 from django.utils.translation import gettext_lazy as _
 
-from wagtail.admin.staticfiles import versioned_static
-from wagtail.admin.widgets import AdminChooser
-from wagtail.admin.widgets.button import ListingButton
+from wagtail.core.admin.staticfiles import versioned_static
+from wagtail.core.admin.widgets import AdminChooser
+from wagtail.core.admin.widgets.button import ListingButton
 from wagtail.core.telepath import register
 from wagtail.core.widget_adapters import WidgetAdapter
 

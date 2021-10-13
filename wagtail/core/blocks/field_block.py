@@ -10,7 +10,7 @@ from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext as _
 
-from wagtail.admin.staticfiles import versioned_static
+from wagtail.core.admin.staticfiles import versioned_static
 from wagtail.core.rich_text import RichText, get_text_for_indexing
 from wagtail.core.telepath import Adapter, register
 from wagtail.core.utils import camelcase_to_underscore, resolve_model_string
@@ -154,7 +154,7 @@ class TextBlock(FieldBlock):
 
     @cached_property
     def field(self):
-        from wagtail.admin.widgets import AdminAutoHeightTextInput
+        from wagtail.core.admin.widgets import AdminAutoHeightTextInput
         field_kwargs = {'widget': AdminAutoHeightTextInput(attrs={'rows': self.rows})}
         field_kwargs.update(self.field_options)
         return forms.CharField(**field_kwargs)
@@ -285,7 +285,7 @@ class DateBlock(FieldBlock):
 
     @cached_property
     def field(self):
-        from wagtail.admin.widgets import AdminDateInput
+        from wagtail.core.admin.widgets import AdminDateInput
         field_kwargs = {
             'widget': AdminDateInput(format=self.format),
         }
@@ -318,7 +318,7 @@ class TimeBlock(FieldBlock):
 
     @cached_property
     def field(self):
-        from wagtail.admin.widgets import AdminTimeInput
+        from wagtail.core.admin.widgets import AdminTimeInput
         field_kwargs = {'widget': AdminTimeInput(format=self.format)}
         field_kwargs.update(self.field_options)
         return forms.TimeField(**field_kwargs)
@@ -346,7 +346,7 @@ class DateTimeBlock(FieldBlock):
 
     @cached_property
     def field(self):
-        from wagtail.admin.widgets import AdminDateTimeInput
+        from wagtail.core.admin.widgets import AdminDateTimeInput
         field_kwargs = {
             'widget': AdminDateTimeInput(format=self.format),
         }
@@ -590,7 +590,7 @@ class RichTextBlock(FieldBlock):
 
     @cached_property
     def field(self):
-        from wagtail.admin.rich_text import get_rich_text_editor_widget
+        from wagtail.core.admin.rich_text import get_rich_text_editor_widget
         return forms.CharField(
             widget=get_rich_text_editor_widget(self.editor, features=self.features),
             **self.field_options
@@ -760,7 +760,7 @@ class PageChooserBlock(ChooserBlock):
 
     @cached_property
     def widget(self):
-        from wagtail.admin.widgets import AdminPageChooser
+        from wagtail.core.admin.widgets import AdminPageChooser
         return AdminPageChooser(target_models=self.target_models,
                                 can_choose_root=self.can_choose_root)
 

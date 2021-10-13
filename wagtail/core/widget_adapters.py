@@ -8,7 +8,7 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.utils.functional import cached_property
 
-from wagtail.admin.staticfiles import versioned_static
+from wagtail.core.admin.staticfiles import versioned_static
 from wagtail.core.telepath import Adapter, register
 
 

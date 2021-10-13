@@ -29,10 +29,10 @@ from django.views.generic import TemplateView
 from django.views.generic.edit import FormView
 from django.views.generic.list import MultipleObjectMixin
 
-from wagtail.admin import messages
-from wagtail.admin.ui.tables import Column, DateColumn, Table, UserColumn
-from wagtail.admin.views.generic.base import WagtailAdminTemplateMixin
-from wagtail.admin.views.mixins import SpreadsheetExportMixin
+from wagtail.core.admin import messages
+from wagtail.core.admin.ui.tables import Column, DateColumn, Table, UserColumn
+from wagtail.core.admin.views.generic.base import WagtailAdminTemplateMixin
+from wagtail.core.admin.views.mixins import SpreadsheetExportMixin
 from wagtail.core.log_actions import log
 from wagtail.core.log_actions import registry as log_registry
 

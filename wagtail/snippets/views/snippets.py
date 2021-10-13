@@ -15,11 +15,11 @@ from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy, ngettext
 from django.views.generic import TemplateView
 
-from wagtail.admin import messages
-from wagtail.admin.edit_handlers import ObjectList, extract_panel_definitions_from_model_class
-from wagtail.admin.forms.search import SearchForm
-from wagtail.admin.ui.tables import Column, DateColumn, UserColumn
-from wagtail.admin.views.generic.models import IndexView
+from wagtail.core.admin import messages
+from wagtail.core.admin.edit_handlers import ObjectList, extract_panel_definitions_from_model_class
+from wagtail.core.admin.forms.search import SearchForm
+from wagtail.core.admin.ui.tables import Column, DateColumn, UserColumn
+from wagtail.core.admin.views.generic.models import IndexView
 from wagtail.core import hooks
 from wagtail.core.log_actions import log
 from wagtail.core.log_actions import registry as log_registry

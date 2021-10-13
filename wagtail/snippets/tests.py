@@ -17,9 +17,9 @@ from django.urls import reverse
 from django.utils.timezone import make_aware
 from taggit.models import Tag
 
-from wagtail.admin.admin_url_finder import AdminURLFinder
-from wagtail.admin.edit_handlers import FieldPanel
-from wagtail.admin.forms import WagtailAdminModelForm
+from wagtail.core.admin.admin_url_finder import AdminURLFinder
+from wagtail.core.admin.edit_handlers import FieldPanel
+from wagtail.core.admin.forms import WagtailAdminModelForm
 from wagtail.core import hooks
 from wagtail.core.blocks.field_block import FieldBlockAdapter
 from wagtail.core.models import Locale, ModelLogEntry, Page

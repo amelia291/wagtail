@@ -2,7 +2,7 @@ from django.contrib.auth.models import Permission
 from django.test import TestCase
 from django.urls import reverse
 
-from wagtail.admin.admin_url_finder import AdminURLFinder
+from wagtail.core.admin.admin_url_finder import AdminURLFinder
 from wagtail.core.models import Page, Site
 from wagtail.tests.utils import WagtailTestUtils
 

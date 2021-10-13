@@ -2,7 +2,7 @@ from django.contrib.messages import get_messages
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-from wagtail.admin.admin_url_finder import AdminURLFinder
+from wagtail.core.admin.admin_url_finder import AdminURLFinder
 from wagtail.core.models import Locale, Page
 from wagtail.tests.utils import WagtailTestUtils
 

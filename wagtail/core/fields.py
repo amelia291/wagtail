@@ -25,7 +25,7 @@ class RichTextField(models.TextField):
         return self.__class__(*args, **kwargs)
 
     def formfield(self, **kwargs):
-        from wagtail.admin.rich_text import get_rich_text_editor_widget
+        from wagtail.core.admin.rich_text import get_rich_text_editor_widget
         defaults = {'widget': get_rich_text_editor_widget(self.editor, features=self.features)}
         defaults.update(kwargs)
         return super().formfield(**defaults)
@@ -90,7 +90,7 @@ class StreamField(models.Field):
         return 'TextField'
 
     def get_panel(self):
-        from wagtail.admin.edit_handlers import StreamFieldPanel
+        from wagtail.core.admin.edit_handlers import StreamFieldPanel
         return StreamFieldPanel
 
     def deconstruct(self):

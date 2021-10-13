@@ -3,7 +3,7 @@ from django.contrib.auth.models import Permission
 from django.urls import include, path, reverse
 from django.utils.translation import gettext as _
 
-from wagtail.admin import widgets as wagtailadmin_widgets
+from wagtail.core.admin import widgets as wagtailadmin_widgets
 from wagtail.core import hooks
 from wagtail.core.models import Locale, TranslatableMixin
 from wagtail.snippets.widgets import SnippetListingButton

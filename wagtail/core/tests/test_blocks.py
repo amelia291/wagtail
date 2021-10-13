@@ -526,7 +526,7 @@ class TestRichTextBlock(TestCase):
         )
 
     def test_adapter(self):
-        from wagtail.admin.rich_text import HalloRichTextArea
+        from wagtail.core.admin.rich_text import HalloRichTextArea
 
         block = blocks.RichTextBlock(editor='hallo')
 
@@ -545,7 +545,7 @@ class TestRichTextBlock(TestCase):
         })
 
     def test_adapter_with_draftail(self):
-        from wagtail.admin.rich_text import DraftailRichTextArea
+        from wagtail.core.admin.rich_text import DraftailRichTextArea
 
         block = blocks.RichTextBlock()
 
@@ -3481,7 +3481,7 @@ class TestPageChooserBlock(TestCase):
         self.assertEqual(block.to_python(None), None)
 
     def test_adapt(self):
-        from wagtail.admin.widgets.chooser import AdminPageChooser
+        from wagtail.core.admin.widgets.chooser import AdminPageChooser
 
         block = blocks.PageChooserBlock(help_text="pick a page, any page")
 
@@ -3731,7 +3731,7 @@ class TestStaticBlock(unittest.TestCase):
 class TestDateBlock(TestCase):
 
     def test_adapt(self):
-        from wagtail.admin.widgets.datetime import AdminDateInput
+        from wagtail.core.admin.widgets.datetime import AdminDateInput
 
         block = blocks.DateBlock()
 
@@ -3762,7 +3762,7 @@ class TestDateBlock(TestCase):
 class TestTimeBlock(TestCase):
 
     def test_adapt(self):
-        from wagtail.admin.widgets.datetime import AdminTimeInput
+        from wagtail.core.admin.widgets.datetime import AdminTimeInput
 
         block = blocks.TimeBlock()
 
@@ -3793,7 +3793,7 @@ class TestTimeBlock(TestCase):
 class TestDateTimeBlock(TestCase):
 
     def test_adapt(self):
-        from wagtail.admin.widgets.datetime import AdminDateTimeInput
+        from wagtail.core.admin.widgets.datetime import AdminDateTimeInput
 
         block = blocks.DateTimeBlock()
 

@@ -89,7 +89,7 @@ TEMPLATES = [
         'OPTIONS': {
             'extensions': [
                 'wagtail.core.jinja2tags.core',
-                'wagtail.admin.jinja2tags.userbar',
+                'wagtail.core.admin.jinja2tags.userbar',
                 'wagtail.images.jinja2tags.images',
                 'wagtail.contrib.settings.jinja2tags.settings',
             ],
@@ -139,7 +139,7 @@ INSTALLED_APPS = [
     'wagtail.users',
     'wagtail.snippets',
     'wagtail.documents',
-    'wagtail.admin',
+    'wagtail.core.admin',
     'wagtail.core.api.v2',
     'wagtail.core',
 
@@ -229,10 +229,10 @@ WAGTAIL_SITE_NAME = "Test Site"
 
 WAGTAILADMIN_RICH_TEXT_EDITORS = {
     'default': {
-        'WIDGET': 'wagtail.admin.rich_text.DraftailRichTextArea'
+        'WIDGET': 'wagtail.core.admin.rich_text.DraftailRichTextArea'
     },
     'hallo': {
-        'WIDGET': 'wagtail.admin.rich_text.HalloRichTextArea'
+        'WIDGET': 'wagtail.core.admin.rich_text.HalloRichTextArea'
     },
     'custom': {
         'WIDGET': 'wagtail.tests.testapp.rich_text.CustomRichTextArea'

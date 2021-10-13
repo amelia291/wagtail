@@ -8,7 +8,7 @@ from django.test import TestCase
 from django.test.utils import override_settings
 from django.urls import reverse
 
-from wagtail.admin.admin_url_finder import AdminURLFinder
+from wagtail.core.admin.admin_url_finder import AdminURLFinder
 from wagtail.core.models import Collection, GroupCollectionPermission, Page
 from wagtail.documents import get_document_model, models
 from wagtail.documents.tests.utils import get_test_document_file

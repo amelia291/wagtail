@@ -7,9 +7,9 @@ from django.urls import include, path, reverse
 from django.utils.module_loading import import_string
 from django.utils.translation import gettext_lazy as _
 
-from wagtail.admin.admin_url_finder import ModelAdminURLFinder, register_admin_url_finder
-from wagtail.admin.menu import MenuItem
-from wagtail.admin.search import SearchArea
+from wagtail.core.admin.admin_url_finder import ModelAdminURLFinder, register_admin_url_finder
+from wagtail.core.admin.menu import MenuItem
+from wagtail.core.admin.search import SearchArea
 from wagtail.core import hooks
 from wagtail.core.compat import AUTH_USER_APP_LABEL, AUTH_USER_MODEL_NAME
 from wagtail.core.permission_policies import ModelPermissionPolicy

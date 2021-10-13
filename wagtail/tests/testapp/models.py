@@ -19,11 +19,11 @@ from modelcluster.models import ClusterableModel
 from taggit.managers import TaggableManager
 from taggit.models import ItemBase, TagBase, TaggedItemBase
 
-from wagtail.admin.edit_handlers import (
+from wagtail.core.admin.edit_handlers import (
     FieldPanel, InlinePanel, MultiFieldPanel, ObjectList, PageChooserPanel, StreamFieldPanel,
     TabbedInterface)
-from wagtail.admin.forms import WagtailAdminPageForm
-from wagtail.admin.mail import send_mail
+from wagtail.core.admin.forms import WagtailAdminPageForm
+from wagtail.core.admin.mail import send_mail
 from wagtail.contrib.forms.forms import FormBuilder
 from wagtail.contrib.forms.models import (
     FORM_FIELD_CHOICES, AbstractEmailForm, AbstractFormField, AbstractFormSubmission)
@@ -476,7 +476,7 @@ class FormPage(AbstractEmailForm):
 
     # This is redundant (SubmissionsListView is the default view class), but importing
     # SubmissionsListView in this models.py helps us to confirm that this recipe
-    # https://docs.wagtail.io/en/stable/reference/contrib/forms/customisation.html#customise-form-submissions-listing-in-wagtail-admin
+    # https://docs.wagtail.io/en/stable/reference/contrib/forms/customisation.html#customise-form-submissions-listing-in-wagtail.core.admin
     # works without triggering circular dependency issues -
     # see https://github.com/wagtail/wagtail/issues/6265
     submissions_list_view_class = SubmissionsListView

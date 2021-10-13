@@ -7,9 +7,9 @@ from django.urls import reverse
 from django.utils.translation import gettext as _
 from django.views.decorators.vary import vary_on_headers
 
-from wagtail.admin import messages
-from wagtail.admin.auth import any_permission_required, permission_required
-from wagtail.admin.forms.search import SearchForm
+from wagtail.core.admin import messages
+from wagtail.core.admin.auth import any_permission_required, permission_required
+from wagtail.core.admin.forms.search import SearchForm
 from wagtail.contrib.search_promotions import forms
 from wagtail.contrib.search_promotions.models import Query
 from wagtail.core.log_actions import log

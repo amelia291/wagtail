@@ -15,7 +15,7 @@ from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from django.utils.text import capfirst
 
-from wagtail.admin.staticfiles import versioned_static
+from wagtail.core.admin.staticfiles import versioned_static
 from wagtail.core.telepath import JSContext
 
 

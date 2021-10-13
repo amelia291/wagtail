@@ -9,10 +9,10 @@ from django.utils.decorators import method_decorator
 from django.utils.translation import gettext as _
 from django.views.generic import TemplateView
 
-from wagtail.admin import messages
-from wagtail.admin.auth import PermissionPolicyChecker
-from wagtail.admin.forms.search import SearchForm
-from wagtail.admin.models import popular_tags_for_model
+from wagtail.core.admin import messages
+from wagtail.core.admin.auth import PermissionPolicyChecker
+from wagtail.core.admin.forms.search import SearchForm
+from wagtail.core.admin.models import popular_tags_for_model
 from wagtail.core.models import Collection
 from wagtail.documents import get_document_model
 from wagtail.documents.forms import get_document_form

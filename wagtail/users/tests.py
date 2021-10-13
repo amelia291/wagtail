@@ -12,7 +12,7 @@ from django.http import HttpRequest, HttpResponse
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-from wagtail.admin.admin_url_finder import AdminURLFinder
+from wagtail.core.admin.admin_url_finder import AdminURLFinder
 from wagtail.core import hooks
 from wagtail.core.compat import AUTH_USER_APP_LABEL, AUTH_USER_MODEL_NAME
 from wagtail.core.models import (
