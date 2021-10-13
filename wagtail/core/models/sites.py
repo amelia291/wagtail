@@ -8,7 +8,7 @@ from django.db.models.functions import Lower
 from django.http.request import split_domain_port
 from django.utils.translation import gettext_lazy as _
 
-from wagtail.core.sites import get_site_for_hostname
+from wagtail.core.siteutils import get_site_for_hostname
 
 
 class SiteManager(models.Manager):
