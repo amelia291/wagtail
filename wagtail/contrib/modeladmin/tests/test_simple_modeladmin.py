@@ -11,7 +11,7 @@ from django.utils.timezone import make_aware
 from openpyxl import load_workbook
 
 from wagtail.core.admin.admin_url_finder import AdminURLFinder
-from wagtail.core.admin.edit_handlers import FieldPanel, TabbedInterface
+from wagtail.core.edit_handlers import FieldPanel, TabbedInterface
 from wagtail.contrib.modeladmin.helpers.search import DjangoORMSearchHandler
 from wagtail.core.models import ModelLogEntry, Page
 from wagtail.images.models import Image

@@ -13,7 +13,7 @@ from django.utils.html import json_script
 from freezegun import freeze_time
 from pytz import utc
 
-from wagtail.core.admin.edit_handlers import (
+from wagtail.core.edit_handlers import (
     CommentPanel, FieldPanel, FieldRowPanel, InlinePanel, ObjectList, PageChooserPanel,
     RichTextFieldPanel, TabbedInterface, extract_panel_definitions_from_model_class,
     get_form_for_model)

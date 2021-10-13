@@ -8,7 +8,7 @@ from django.urls import reverse
 from django.utils import timezone
 from freezegun import freeze_time
 
-from wagtail.core.admin.edit_handlers import FieldPanel, ObjectList, TabbedInterface
+from wagtail.core.edit_handlers import FieldPanel, ObjectList, TabbedInterface
 from wagtail.core.admin.views.pages.preview import PreviewOnEdit
 from wagtail.core.models import Page
 from wagtail.tests.testapp.models import EventCategory, EventPage, SimplePage, StreamPage

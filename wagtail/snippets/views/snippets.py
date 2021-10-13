@@ -16,7 +16,7 @@ from django.utils.translation import gettext_lazy, ngettext
 from django.views.generic import TemplateView
 
 from wagtail.core.admin import messages
-from wagtail.core.admin.edit_handlers import ObjectList, extract_panel_definitions_from_model_class
+from wagtail.core.edit_handlers import ObjectList, extract_panel_definitions_from_model_class
 from wagtail.core.admin.forms.search import SearchForm
 from wagtail.core.admin.ui.tables import Column, DateColumn, UserColumn
 from wagtail.core.admin.views.generic.models import IndexView
